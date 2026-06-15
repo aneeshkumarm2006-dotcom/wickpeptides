@@ -3,6 +3,7 @@ import { Inter, Geist_Mono, Poppins, Montserrat } from "next/font/google";
 import "./globals.css";
 import { CartProvider } from "@/contexts/CartContext";
 import { Navbar } from "@/components/layout/Navbar";
+import { Footer } from "@/components/layout/Footer";
 import { AgeGate } from "@/components/AgeGate";
 
 const inter = Inter({
@@ -50,7 +51,8 @@ export default function RootLayout({
       <body className="min-h-full flex flex-col">
         <CartProvider>
           <Navbar />
-          {children}
+          <div className="flex-1">{children}</div>
+          <Footer />
           <AgeGate />
         </CartProvider>
       </body>
