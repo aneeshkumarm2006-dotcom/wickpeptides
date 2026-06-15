@@ -7,7 +7,7 @@ import { SectionLabel } from "@/components/SectionLabel";
 export const metadata: Metadata = {
   title: "Sitemap",
   description:
-    "A full index of every page on the Wick Peptides website — shop, products, legal documents, and account pages.",
+    "A complete directory of every page across the Wick Peptides website — shop, products, legal documents, and account pages.",
 };
 
 type SitemapLink = { label: string; href: string; description?: string };
@@ -17,16 +17,16 @@ const SITEMAP: SitemapSection[] = [
   {
     title: "Main",
     links: [
-      { label: "Home", href: "/", description: "Research-grade compounds, verified purity." },
-      { label: "About", href: "/about", description: "Our standard and why we set it." },
-      { label: "Contact", href: "/contact", description: "Get in touch with our team." },
+      { label: "Home", href: "/", description: "Research-grade compounds with verified purity." },
+      { label: "About", href: "/about", description: "The standard we hold and the reasons behind it." },
+      { label: "Contact", href: "/contact", description: "Reach out to our team." },
     ],
   },
   {
     title: "Shop",
     links: [
-      { label: "Shop All Compounds", href: "/shop", description: "Full catalog of 27 research compounds." },
-      { label: "Build a Bundle", href: "/bundle", description: "Choose any 5 peptides and save 10%." },
+      { label: "Shop All Compounds", href: "/shop", description: "The complete catalog of 27 research compounds." },
+      { label: "Build a Bundle", href: "/bundle", description: "Pick any 5 peptides and take 10% off." },
     ],
   },
   {
@@ -35,16 +35,16 @@ const SITEMAP: SitemapSection[] = [
       {
         label: "COAs & Testing",
         href: "/coas",
-        description: "Every batch tested, every result published.",
+        description: "Each batch tested and each result made public.",
       },
     ],
   },
   {
     title: "Account",
     links: [
-      { label: "Sign In / Register", href: "/auth", description: "Access your account." },
-      { label: "My Account", href: "/account", description: "Orders, COAs, and settings." },
-      { label: "Affiliate Program", href: "/affiliates", description: "Partner with us and earn 15%." },
+      { label: "Sign In / Register", href: "/auth", description: "Get into your account." },
+      { label: "My Account", href: "/account", description: "Your orders, COAs, and settings." },
+      { label: "Affiliate Program", href: "/affiliates", description: "Team up with us and earn 15%." },
     ],
   },
   {
@@ -89,7 +89,7 @@ export default function SitemapPage() {
             Sitemap
           </h1>
           <p className="mt-6 leading-relaxed text-muted-foreground">
-            A complete index of every page on the Wick Peptides website.
+            A full directory of every page across the Wick Peptides website.
           </p>
         </div>
       </section>

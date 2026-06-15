@@ -18,9 +18,9 @@ export default function NotFound() {
         </h1>
 
         <p className="mt-4 text-base leading-relaxed text-muted-foreground">
-          The page you&rsquo;re looking for doesn&rsquo;t exist or may have been
-          moved. Every compound in our catalog is still here — let&rsquo;s get
-          you back to it.
+          The page you&rsquo;re after either doesn&rsquo;t exist or has been
+          relocated. Our full catalog of compounds is still right here — let&rsquo;s
+          point you back to it.
         </p>
 
         <div className="mt-8 flex flex-col gap-3 sm:flex-row">
@@ -29,14 +29,14 @@ export default function NotFound() {
             className="inline-flex h-11 items-center justify-center gap-2 rounded-lg bg-brand-navy px-6 text-sm font-medium text-white transition-colors hover:bg-brand-blue"
           >
             <ArrowLeft className="size-4" />
-            Back to home
+            Return home
           </Link>
           <Link
             href="/shop"
             className="inline-flex h-11 items-center justify-center gap-2 rounded-lg border border-brand-border bg-white px-6 text-sm font-medium text-brand-navy transition-colors hover:bg-brand-light"
           >
             <Search className="size-4" />
-            Browse the catalog
+            Explore the catalog
           </Link>
         </div>
       </div>

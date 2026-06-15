@@ -6,52 +6,52 @@ import { StarRating } from "@/components/StarRating";
 
 const TESTIMONIALS = [
   {
-    name: "Dr. Marcus Hale, PhD",
-    title: "Principal Investigator · Translational Metabolics Lab",
+    name: "Dr. Jane Doe, PhD",
+    title: "Principal Investigator · Example Research Lab",
     orders: 41,
     portrait: "/reviewer-hale.svg",
     quote:
-      "Lot-matched COAs land in my inbox before the package does. In six years of sourcing research peptides, I have not seen this level of documentation discipline.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   },
   {
-    name: "Dr. Elena Vasquez",
-    title: "Endocrinology Research Fellow · Pacific Medical Institute",
+    name: "Dr. John Smith",
+    title: "Research Fellow · Sample Medical Institute",
     orders: 18,
     portrait: "/reviewer-vasquez.svg",
     quote:
-      "HPLC traces match the stated purity to three decimals. That is the only sentence I need to write — and the only one that should matter to any serious lab.",
+      "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
   },
   {
-    name: "Dr. James Okafor, MD",
-    title: "Clinical Research Director · Northbridge Longevity Center",
+    name: "Dr. Richard Roe, MD",
+    title: "Research Director · Placeholder Longevity Center",
     orders: 27,
     portrait: "/reviewer-okafor.svg",
     quote:
-      "Cold-chain integrity is flawless. Temperature loggers come back clean on every shipment. This is the operational standard the field has been waiting for.",
+      "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur sint occaecat.",
   },
   {
-    name: "Dr. Priya Raman, PharmD",
-    title: "Lead Compounding Scientist · Helix Research Pharmacy",
+    name: "Dr. Mary Major, PharmD",
+    title: "Lead Scientist · Demo Research Pharmacy",
     orders: 33,
     portrait: "/reviewer-raman.svg",
     quote:
-      "Reconstitution behavior is identical batch to batch — no clumping, no haze, full solubility within seconds. That consistency is what keeps our protocols reproducible.",
+      "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
   },
   {
-    name: "Dr. Anders Lindqvist",
-    title: "Biochemistry Department · Karolinska Affiliated Lab",
+    name: "Dr. John Public",
+    title: "Biochemistry Department · Example Affiliated Lab",
     orders: 22,
     portrait: "/reviewer-lindqvist.svg",
     quote:
-      "We blind-tested against three other suppliers. Wick Peptides was the only sample that matched its certificate on every analyte. They have our standing order.",
+      "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam rem aperiam.",
   },
   {
-    name: "Dr. Sarah Chen, PhD",
-    title: "Senior Research Scientist · Coastal Peptide Research Group",
+    name: "Dr. Alex Sample, PhD",
+    title: "Senior Research Scientist · Sample Research Group",
     orders: 56,
     portrait: "/reviewer-chen.svg",
     quote:
-      "Documentation, packaging, communication — every touchpoint feels like a real medical-grade supplier. This is what the research compound space should look like.",
+      "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores.",
   },
 ];
 

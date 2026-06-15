@@ -13,26 +13,26 @@ import { SectionLabel } from "@/components/SectionLabel";
 export const metadata: Metadata = {
   title: "My Account",
   description:
-    "Manage your Wick Peptides account, view order history, and download Certificates of Analysis.",
+    "Oversee your Wick Peptides account, review your order history, and retrieve Certificates of Analysis.",
 };
 
 const ACCOUNT_SECTIONS = [
   {
     icon: Package,
     title: "Order History",
-    description: "View and track all your past and current orders.",
+    description: "Browse and follow every one of your past and active orders.",
     href: "#",
   },
   {
     icon: FileText,
     title: "My COAs",
-    description: "Download Certificates of Analysis for your purchases.",
+    description: "Retrieve the Certificate of Analysis for each of your purchases.",
     href: "/coas",
   },
   {
     icon: Settings,
     title: "Account Settings",
-    description: "Update your email, password, and shipping address.",
+    description: "Edit your email, password, and shipping address.",
     href: "#",
   },
 ];
@@ -47,7 +47,7 @@ export default function AccountPage() {
             My Account
           </h1>
           <p className="mt-6 leading-relaxed text-muted-foreground">
-            Manage your orders, download COAs, and update your account details.
+            Handle your orders, pull down COAs, and keep your account details current.
           </p>
         </div>
       </section>
@@ -61,10 +61,10 @@ export default function AccountPage() {
             </span>
             <div>
               <h2 className="text-lg font-semibold text-brand-navy">
-                Sign in to your account
+                Log in to your account
               </h2>
               <p className="mt-1 text-sm text-muted-foreground">
-                You must be signed in to view your account details.
+                Signing in is required before you can see your account details.
               </p>
             </div>
             <Link

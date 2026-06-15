@@ -106,7 +106,7 @@ export function ContactForm() {
           id="contact-message"
           value={message}
           onChange={(e) => setMessage(e.target.value)}
-          placeholder="How can we help with your research?"
+          placeholder="Tell us how we can support your research."
           required
           rows={6}
           className="w-full min-w-0 resize-y rounded-md border border-input bg-transparent px-3 py-2.5 text-base shadow-sm outline-none transition-colors placeholder:text-muted-foreground focus-visible:ring-1 focus-visible:ring-ring md:text-sm"

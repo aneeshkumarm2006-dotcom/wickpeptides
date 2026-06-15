@@ -10,7 +10,7 @@ export function Hero() {
       <div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-12 px-6 py-16 lg:grid-cols-2 lg:py-24">
         {/* Left column */}
         <div className="flex flex-col gap-6">
-          <SectionLabel>Issue №01 — Rule The Standard</SectionLabel>
+          <SectionLabel>Issue №01 — The New Benchmark</SectionLabel>
 
           <h1 className="text-4xl font-bold leading-[1.05] tracking-tight text-brand-navy sm:text-5xl lg:text-6xl">
             Verified Purity.
@@ -57,7 +57,7 @@ export function Hero() {
           />
           <div className="relative overflow-hidden rounded-3xl shadow-2xl ring-1 ring-brand-border">
             <Image
-              src="/kingbio-lab-hero.png"
+              src="/wickpeptides-hero.png"
               alt="Researcher analyzing Wick Peptides BPC-157 under a microscope in a certified lab"
               width={1402}
               height={1122}

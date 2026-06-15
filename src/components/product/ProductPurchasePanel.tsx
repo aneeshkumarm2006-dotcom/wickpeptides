@@ -81,7 +81,7 @@ export function ProductPurchasePanel({ product }: { product: Product }) {
       <div>
         <p className="text-4xl font-bold text-brand-navy">${total.toFixed(2)}</p>
         <p className="mt-1 text-sm text-muted-foreground">
-          Earn {points} points with this order
+          Collect {points} points on this order
         </p>
       </div>
 

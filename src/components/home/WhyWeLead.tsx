@@ -1,17 +1,17 @@
 import Image from "next/image";
-import { Crown, FileCheck, Lock, Microscope } from "lucide-react";
+import { ShieldCheck, FileCheck, Lock, Microscope } from "lucide-react";
 
 import { SectionLabel } from "@/components/SectionLabel";
 
 const POINTS = [
   {
-    icon: Crown,
-    title: "Sovereign Standard",
+    icon: ShieldCheck,
+    title: "Uncompromising Standard",
     text: "We refuse to ship anything we wouldn't run on our own bench. 99%+ purity, every batch, no exceptions.",
   },
   {
     icon: FileCheck,
-    title: "Royal Documentation",
+    title: "Complete Documentation",
     text: "Independent third-party COA published for every batch. Verifiable by lot number on receipt.",
   },
   {
@@ -26,7 +26,7 @@ const POINTS = [
   },
 ];
 
-export function WhyKing() {
+export function WhyWeLead() {
   return (
     <section className="border-b border-brand-border bg-brand-navy text-white">
       <div className="mx-auto grid max-w-7xl grid-cols-1 gap-12 px-6 py-16 lg:grid-cols-2 lg:py-24">
@@ -39,17 +39,16 @@ export function WhyKing() {
             className="h-10 w-auto brightness-0 invert"
           />
           <SectionLabel className="text-brand-blue/80">
-            Why We Are King
+            Why We Lead
           </SectionLabel>
           <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
-            The crown is earned, not claimed.
+            Trust is earned, not claimed.
           </h2>
           <p className="max-w-md leading-relaxed text-white/70">
-            We named the company King because we set out to build above the
-            standard the research compound industry has tolerated for too long.
-            Every decision — synthesis, testing, packaging, dispatch — is made to
-            a higher bar, and documented so you never have to take our word for
-            it.
+            We built Wick Peptides to rise above the standard the research
+            compound industry has tolerated for too long. Every decision —
+            synthesis, testing, packaging, dispatch — is made to a higher bar,
+            and documented so you never have to take our word for it.
           </p>
         </div>
 
@@ -72,4 +71,4 @@ export function WhyKing() {
   );
 }
 
-export default WhyKing;
+export default WhyWeLead;

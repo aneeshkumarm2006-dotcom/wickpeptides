@@ -33,7 +33,7 @@ export function ShopSidebar({
   return (
     <aside className="space-y-6 lg:sticky lg:top-24 lg:self-start">
       <div>
-        <h2 className="text-eyebrow mb-3">Category</h2>
+        <h2 className="text-eyebrow mb-3">Filter by category</h2>
 
         <div className="space-y-2.5">
           {CATEGORIES.map((c) => {
@@ -66,7 +66,7 @@ export function ShopSidebar({
           }}
           className="inline-flex h-8 flex-1 items-center justify-center gap-2 whitespace-nowrap rounded-md border border-input bg-background px-3 text-xs font-medium shadow-sm transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
         >
-          Clear all
+          Reset
         </button>
         <button
           type="button"

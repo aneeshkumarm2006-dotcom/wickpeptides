@@ -7,7 +7,7 @@ import { AuthForms } from "@/components/auth/AuthForms";
 export const metadata: Metadata = {
   title: "Sign In",
   description:
-    "Sign in or create an account to manage your Wick Peptides orders, download COAs, and track your research compound history.",
+    "Log in or register to manage your Wick Peptides orders, retrieve COAs, and follow your research compound history.",
 };
 
 export default function AuthPage() {
@@ -27,7 +27,7 @@ export default function AuthPage() {
               Wick Peptides
             </h1>
             <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-              Sign in to manage orders, download COAs, and track your research
+              Log in to handle orders, pull down COAs, and follow your research
               history.
             </p>
           </div>

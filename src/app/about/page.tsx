@@ -8,9 +8,9 @@ export const metadata: Metadata = {
 };
 
 const PARAGRAPHS = [
-  "We named the company King because we refuse to operate beneath the standard the research compounds industry has tolerated for too long. Most suppliers make claims they cannot back up. We back up everything we ship.",
-  "Wick Peptides was built to be different. Every compound we carry is independently tested. Every COA is published. Every batch is traceable from synthesis to your bench.",
-  "We are not a supplement brand. We are not a wellness company. We exist for serious researchers who refuse to compromise on what enters their lab.",
+  "We built Wick Peptides because we refuse to operate beneath the standard the research-compounds industry has tolerated for far too long. Most suppliers make claims they can’t back up. We back up everything we ship.",
+  "Wick Peptides was built to work differently. Every compound we carry is independently tested, every COA is published, and every batch is traceable from synthesis straight to your bench.",
+  "We’re not a supplement brand, and we’re not a wellness company. We exist for serious researchers who won’t compromise on what enters their lab.",
 ];
 
 const CARDS = [

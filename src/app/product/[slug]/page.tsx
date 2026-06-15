@@ -32,7 +32,7 @@ export async function generateMetadata({
 
   return {
     title: product.name,
-    description: `${product.name}: research-grade ${product.category.toLowerCase()}, third-party tested to 99%+ purity with a lot-specific COA on every batch. Rated ${product.rating} across ${product.reviewCount} verified reviews.`,
+    description: `${product.name}: research-grade ${product.category.toLowerCase()}, independently tested to 99%+ purity with a lot-specific COA accompanying every batch. Rated ${product.rating} from ${product.reviewCount} verified reviews.`,
   };
 }
 
@@ -71,7 +71,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
                 99%+
               </p>
               <p className="mt-0.5 text-[11px] uppercase tracking-wide text-muted-foreground">
-                HPLC verified purity
+                HPLC confirmed purity
               </p>
             </div>
           </div>
@@ -101,8 +101,8 @@ export default async function ProductPage({ params }: ProductPageProps) {
               </div>
             </div>
             <p className="max-w-md text-sm leading-relaxed text-muted-foreground">
-              Every rating is tied to a verified purchase from our order ledger.
-              A lot-matched Certificate of Analysis accompanies each shipment.
+              Each rating comes from a verified purchase in our order ledger,
+              and a lot-matched Certificate of Analysis ships with every order.
             </p>
           </div>
         </div>
@@ -116,7 +116,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
               Related Products
             </h2>
             <p className="mt-2 text-muted-foreground">
-              More from {product.category}.
+              Explore more in {product.category}.
             </p>
             <div className="mt-8 grid grid-cols-2 gap-5 lg:grid-cols-4">
               {related.map((p) => (

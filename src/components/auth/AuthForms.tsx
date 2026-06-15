@@ -173,7 +173,7 @@ export function AuthForms() {
 
       {tab === "register" && (
         <p className="mt-4 text-center text-xs text-muted-foreground">
-          By creating an account you agree to our{" "}
+          Creating an account means you accept our{" "}
           <Link
             href="/legal/terms"
             className="text-brand-blue underline-offset-4 hover:underline"

@@ -6,7 +6,7 @@ import { ContactForm } from "@/components/contact/ContactForm";
 export const metadata: Metadata = {
   title: "Contact",
   description:
-    "Get in touch with Wick Peptides for product questions, order issues, COA requests, and general inquiries. We respond within 24 hours, 7 days a week.",
+    "Reach Wick Peptides about product questions, order issues, COA requests, and general inquiries. We reply within 24 hours, 7 days a week.",
 };
 
 const INFO_CARDS = [
@@ -25,7 +25,7 @@ const INFO_CARDS = [
   {
     icon: Clock,
     title: "Response Time",
-    body: "Within 24 hours, 7 days a week.",
+    body: "Inside 24 hours, every day of the week.",
   },
 ];
 
@@ -39,9 +39,9 @@ export default function ContactPage() {
             Get In Touch
           </h1>
           <p className="mt-6 text-muted-foreground">
-            Questions about a product, an order, or a Certificate of Analysis?
-            Our team is here to help — send us a message and we&apos;ll get back
-            to you within a day.
+            Have a question about a product, an order, or a Certificate of
+            Analysis? Our team is ready to help — drop us a message and
+            we&apos;ll reply within a day.
           </p>
         </div>
       </section>

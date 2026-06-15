@@ -16,11 +16,11 @@ export function ShopCatalog() {
       <div className="mb-8">
         <p className="text-eyebrow mb-2">CATALOG</p>
         <h1 className="font-display text-3xl font-bold sm:text-4xl">
-          Shop All Compounds
+          Browse Every Compound
         </h1>
         <p className="mt-3 max-w-2xl text-muted-foreground">
-          Organized by research category. Every compound is 99%+ purity with a
-          COA on every batch.
+          Sorted by research category. Each compound is verified at 99%+ purity
+          and ships with a COA for every batch.
         </p>
       </div>
 
@@ -31,7 +31,7 @@ export function ShopCatalog() {
           type="text"
           value={search}
           onChange={(e) => setSearch(e.target.value)}
-          placeholder="Search compounds by name, category, or description…"
+          placeholder="Find a compound by name, category, or description…"
           className="flex h-9 w-full rounded-md border border-input bg-transparent py-1 pl-10 pr-3 text-base shadow-sm transition-colors placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring md:text-sm"
         />
       </div>

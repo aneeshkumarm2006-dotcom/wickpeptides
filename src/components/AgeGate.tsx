@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import { ShieldCheck } from "lucide-react";
 
 /** Persisted once the visitor confirms — gate stays dismissed across visits. */
-const STORAGE_KEY = "kbl_age_verified";
+const STORAGE_KEY = "wp_age_verified";
 
 /** Where under-21 visitors are sent when they decline. */
 const EXIT_URL = "https://www.google.com";

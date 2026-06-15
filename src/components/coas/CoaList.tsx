@@ -23,12 +23,12 @@ export function CoaList() {
     <div>
       {/* Header + search */}
       <div className="mb-6 flex flex-wrap items-center justify-between gap-4">
-        <h2 className="font-display text-2xl font-bold">Published COAs</h2>
+        <h2 className="font-display text-2xl font-bold">Available COAs</h2>
         <input
           type="search"
           value={search}
           onChange={(e) => setSearch(e.target.value)}
-          placeholder="Search by product or batch…"
+          placeholder="Look up a product or batch…"
           className="flex h-9 w-full max-w-xs rounded-md border border-input bg-transparent px-3 py-1 text-base shadow-sm transition-colors placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50 md:text-sm"
         />
       </div>
@@ -55,7 +55,7 @@ export function CoaList() {
           ))}
         </div>
       ) : (
-        <p className="text-muted-foreground">No COAs match “{search}”.</p>
+        <p className="text-muted-foreground">No COAs found for “{search}”.</p>
       )}
     </div>
   );

@@ -3,9 +3,9 @@ import type { Metadata } from "next";
 import { ShopCatalog } from "@/components/shop/ShopCatalog";
 
 export const metadata: Metadata = {
-  title: "Shop All Compounds",
+  title: "Browse Every Compound",
   description:
-    "Browse the complete Wick Peptides catalog of research-grade compounds. Third-party tested with a lot-specific COA on every batch.",
+    "Explore the full Wick Peptides lineup of research-grade compounds. Independently verified, with a lot-specific COA accompanying every batch.",
 };
 
 export default function ShopPage() {

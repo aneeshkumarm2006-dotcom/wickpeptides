@@ -5,7 +5,7 @@ import { BundleBuilder } from "@/components/bundle/BundleBuilder";
 export const metadata: Metadata = {
   title: "Build Your Bundle",
   description:
-    "Choose any 5 research-grade peptides and save 10% automatically. Every compound is third-party tested with a lot-specific COA on each batch.",
+    "Pick any 5 research-grade peptides and a 10% discount applies on its own. Each compound is third-party tested, with a lot-specific COA accompanying every batch.",
 };
 
 export default function BundlePage() {

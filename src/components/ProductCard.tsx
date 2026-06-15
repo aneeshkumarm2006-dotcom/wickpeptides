@@ -81,7 +81,7 @@ export function ProductCard({ product, className }: ProductCardProps) {
           <span className="text-lg font-bold">${price.toFixed(2)}</span>
         </div>
 
-        <p className="text-xs text-muted-foreground">Earn {points} points</p>
+        <p className="text-xs text-muted-foreground">Collect {points} points</p>
 
         <div className="mt-auto pt-1">
           <Link

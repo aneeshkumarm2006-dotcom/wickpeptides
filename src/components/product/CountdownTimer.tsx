@@ -51,9 +51,9 @@ export function CountdownTimer({ className }: { className?: string }) {
     >
       <Clock className="size-4 shrink-0 text-brand-blue" aria-hidden="true" />
       <span>
-        Order in{" "}
+        Place your order within{" "}
         <span className="font-mono font-semibold tabular-nums">{display}</span>{" "}
-        for same-day shipping
+        to ship today
       </span>
     </div>
   );

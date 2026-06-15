@@ -26,7 +26,7 @@ export function ShopGrid({ search, selectedCategories }: ShopGridProps) {
   if (groups.length === 0) {
     return (
       <div className="rounded-lg border bg-surface p-12 text-center text-sm text-muted-foreground">
-        No compounds match your filters.
+        Nothing matches the filters you&rsquo;ve chosen.
       </div>
     );
   }
@@ -45,7 +45,7 @@ export function ShopGrid({ search, selectedCategories }: ShopGridProps) {
               </h2>
             </div>
             <p className="hidden text-xs text-muted-foreground sm:block">
-              {c.products.length} compounds
+              {c.products.length} compounds available
             </p>
           </div>
 

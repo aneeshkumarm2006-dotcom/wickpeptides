@@ -14,7 +14,7 @@ import { CartDrawer } from "@/components/CartDrawer";
 /** Max quantity per line item — matches the product page stepper. */
 export const MAX_QUANTITY = 10;
 
-const STORAGE_KEY = "kbl_cart";
+const STORAGE_KEY = "wp_cart";
 
 export type CartItem = {
   /** Unique line id: `${slug}__${dosageLabel ?? "default"}`. */

@@ -32,10 +32,10 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://wickpeptides.com"),
   title: {
     template: "%s — Wick Peptides",
-    default: "Wick Peptides — Verified Purity. No Exceptions.",
+    default: "Wick Peptides — Confirmed Purity. Zero Compromise.",
   },
   description:
-    "Research-grade compounds from certified synthesis facilities. Third-party tested. Full COA on every batch.",
+    "Laboratory-grade compounds synthesized at certified facilities and verified by independent third-party labs. A full COA ships with every batch.",
 };
 
 export default function RootLayout({

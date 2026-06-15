@@ -65,12 +65,12 @@ export function BundleBuilder() {
     <div className="mx-auto max-w-7xl px-6 py-16 lg:py-20">
       {/* Header */}
       <div className="flex flex-col gap-3 text-center">
-        <SectionLabel className="mx-auto">Build Bundle · 10% Off</SectionLabel>
+        <SectionLabel className="mx-auto">Bundle &amp; Save · 10% Off</SectionLabel>
         <h1 className="text-4xl font-bold tracking-tight text-brand-navy sm:text-5xl">
-          Build Your Bundle
+          Assemble Your Bundle
         </h1>
         <p className="mx-auto max-w-xl text-lg text-muted-foreground">
-          Choose Any 5 Peptides. Save 10% Automatically.
+          Pick any 5 peptides and 10% comes off automatically.
         </p>
       </div>
 
@@ -83,7 +83,7 @@ export function BundleBuilder() {
                 1
               </span>
               <h2 className="text-lg font-semibold text-brand-navy">
-                Select your compounds
+                Choose your compounds
               </h2>
             </div>
             <span
@@ -174,14 +174,14 @@ export function BundleBuilder() {
         <aside className="lg:sticky lg:top-24 lg:self-start">
           <div className="flex flex-col gap-5 rounded-2xl border border-brand-border bg-white p-6">
             <h2 className="text-lg font-semibold text-brand-navy">
-              Bundle Summary
+              Your Bundle
             </h2>
 
             {/* Selected items list */}
             {selectedCount === 0 ? (
               <p className="text-sm text-muted-foreground">
-                Select {BUNDLE_SIZE} peptides to build your bundle and unlock 10%
-                off automatically.
+                Add {BUNDLE_SIZE} peptides to complete your bundle and the 10%
+                discount applies automatically.
               </p>
             ) : (
               <ul className="flex flex-col divide-y divide-brand-border">
@@ -253,12 +253,12 @@ export function BundleBuilder() {
               ) : isComplete ? (
                 "Add Bundle to Cart"
               ) : (
-                `Select ${BUNDLE_SIZE - selectedCount} more`
+                `Add ${BUNDLE_SIZE - selectedCount} more`
               )}
             </button>
 
             <p className="text-center text-xs text-muted-foreground">
-              Always 10% off. No code needed.
+              A standing 10% off — no promo code required.
             </p>
           </div>
         </aside>

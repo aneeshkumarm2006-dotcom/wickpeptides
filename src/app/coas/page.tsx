@@ -6,24 +6,24 @@ import { CoaList } from "@/components/coas/CoaList";
 export const metadata: Metadata = {
   title: "COAs & Testing",
   description:
-    "Every Wick Peptides batch is independently tested by ISO-accredited labs using HPLC and mass spectrometry. Browse and download lot-specific Certificates of Analysis.",
+    "Every Wick Peptides batch undergoes independent analysis at ISO-accredited labs via HPLC and mass spectrometry. Explore and retrieve lot-specific Certificates of Analysis.",
 };
 
 const METHODS = [
   {
     icon: ChartColumn,
     title: "HPLC Testing",
-    text: "High-Performance Liquid Chromatography quantifies purity and identifies any impurities at trace levels.",
+    text: "High-Performance Liquid Chromatography measures purity and flags any impurities down to trace levels.",
   },
   {
     icon: FlaskConical,
     title: "Mass Spectrometry",
-    text: "Confirms exact molecular identity and structural integrity for every released batch.",
+    text: "Verifies precise molecular identity and structural integrity on every batch we release.",
   },
   {
     icon: BadgeCheck,
     title: "Third-Party Accreditation",
-    text: "Independent ISO-accredited labs perform every test. We never test our own product.",
+    text: "Every test is run by independent ISO-accredited labs. We never grade our own product.",
   },
 ];
 
@@ -38,9 +38,9 @@ export default function CoasPage() {
             Every Batch Tested. Every Result Published.
           </h1>
           <p className="mx-auto mt-5 max-w-2xl text-muted-foreground">
-            We do not release a single compound until it has been verified by an
-            independent accredited laboratory. Every batch has a Certificate of
-            Analysis tied to it. You can verify any vial you receive by batch
+            No compound leaves our facility until an independent accredited
+            laboratory has verified it. A Certificate of Analysis is linked to
+            every batch, so you can confirm any vial you receive by its batch
             number.
           </p>
         </div>

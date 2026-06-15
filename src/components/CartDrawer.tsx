@@ -47,9 +47,9 @@ export function CartDrawer() {
               />
             </div>
             <div>
-              <p className="font-semibold text-brand-navy">Your cart is empty</p>
+              <p className="font-semibold text-brand-navy">Nothing in your cart yet</p>
               <p className="mt-1 text-sm text-muted-foreground">
-                Add research compounds to get started.
+                Add a few research compounds to begin.
               </p>
             </div>
             <SheetClose
@@ -61,7 +61,7 @@ export function CartDrawer() {
                 />
               }
             >
-              Browse the Catalog
+              Explore the Catalog
             </SheetClose>
           </div>
         ) : (
@@ -153,14 +153,14 @@ export function CartDrawer() {
                 <span className="tabular-nums">${subtotal.toFixed(2)}</span>
               </div>
               <p className="text-xs text-muted-foreground">
-                Shipping &amp; taxes calculated at checkout.
+                Shipping &amp; taxes are calculated at checkout.
               </p>
               <button
                 type="button"
                 onClick={() => {
                   // Frontend-only clone — no real payment processing.
                   window.alert(
-                    "This is a demo storefront — checkout is not enabled."
+                    "This is a demo storefront — checkout isn't available."
                   );
                 }}
                 className={cn(
@@ -177,7 +177,7 @@ export function CartDrawer() {
                   />
                 }
               >
-                Continue shopping
+                Keep shopping
               </SheetClose>
             </SheetFooter>
           </>
