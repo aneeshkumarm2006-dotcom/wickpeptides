@@ -63,18 +63,18 @@ export function AgeGate() {
       aria-labelledby="age-gate-title"
       className="fixed inset-0 z-[100] flex items-center justify-center p-4 backdrop-blur-md"
     >
-      <div className="w-full max-w-lg rounded-2xl bg-brand-light p-8 text-center shadow-2xl ring-1 ring-brand-border sm:p-10">
-        <div className="mx-auto flex size-16 items-center justify-center rounded-full bg-brand-navy/5 ring-1 ring-brand-navy/10">
+      <div className="w-full max-w-xl rounded-2xl bg-brand-light p-8 text-center shadow-2xl ring-1 ring-brand-border sm:p-10">
+        <div className="mx-auto flex size-16 items-center justify-center rounded-full bg-brand-blue/10 ring-1 ring-brand-blue/15">
           <ShieldCheck className="size-7 text-brand-navy" aria-hidden="true" />
         </div>
 
-        <p className="mt-6 text-sm font-bold uppercase tracking-widest text-brand-blue">
+        <p className="mt-6 font-heading text-sm font-bold uppercase tracking-widest text-brand-blue">
           King Bio Labs
         </p>
 
         <h2
           id="age-gate-title"
-          className="mt-2 text-3xl font-extrabold tracking-tight text-brand-navy sm:text-4xl"
+          className="mt-3 font-heading text-3xl font-extrabold leading-tight tracking-tight text-[#1a1a1a] sm:text-4xl"
         >
           For Qualified Researchers Only
         </h2>
@@ -96,14 +96,14 @@ export function AgeGate() {
           <button
             type="button"
             onClick={exit}
-            className="flex h-12 flex-1 items-center justify-center rounded-xl border border-brand-border bg-white px-5 text-sm font-semibold text-brand-navy transition-colors hover:bg-brand-light"
+            className="flex h-12 flex-1 items-center justify-center whitespace-nowrap rounded-xl border border-brand-border bg-white px-5 text-sm font-semibold text-brand-navy transition-colors hover:bg-brand-light"
           >
             I am under 21 - Exit
           </button>
           <button
             type="button"
             onClick={confirm}
-            className="flex h-12 flex-1 items-center justify-center rounded-xl bg-brand-navy px-5 text-sm font-semibold text-white transition-colors hover:bg-brand-blue"
+            className="flex h-12 flex-1 items-center justify-center whitespace-nowrap rounded-xl bg-brand-navy px-5 text-sm font-semibold text-white transition-colors hover:bg-brand-blue"
           >
             I am 21+ and a Researcher
           </button>

@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
-import { Inter, Geist_Mono } from "next/font/google";
+import { Inter, Geist_Mono, Poppins, Montserrat } from "next/font/google";
 import "./globals.css";
 import { CartProvider } from "@/contexts/CartContext";
-import { CartButton } from "@/components/cart/CartButton";
+import { Navbar } from "@/components/layout/Navbar";
 import { AgeGate } from "@/components/AgeGate";
 
 const inter = Inter({
@@ -13,6 +13,18 @@ const inter = Inter({
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
+});
+
+const poppins = Poppins({
+  variable: "--font-poppins",
+  subsets: ["latin"],
+  weight: ["600", "700", "800"],
+});
+
+const montserrat = Montserrat({
+  variable: "--font-montserrat",
+  subsets: ["latin"],
+  weight: ["500", "600", "700", "800"],
 });
 
 export const metadata: Metadata = {
@@ -33,20 +45,13 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${inter.variable} ${geistMono.variable} h-full antialiased`}
+      className={`${inter.variable} ${geistMono.variable} ${poppins.variable} ${montserrat.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
         <CartProvider>
+          <Navbar />
           {children}
           <AgeGate />
-          {/*
-            Temporary host for the cart trigger until the Navbar (Phase 1)
-            exists. When the Navbar is built, render <CartButton /> inside it
-            and remove this fixed wrapper.
-          */}
-          <div className="fixed right-4 top-4 z-40">
-            <CartButton className="bg-white shadow-md ring-1 ring-brand-border" />
-          </div>
         </CartProvider>
       </body>
     </html>

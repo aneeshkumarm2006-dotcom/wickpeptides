@@ -49,27 +49,22 @@ export function Hero() {
         </div>
 
         {/* Right column */}
-        <div className="relative mx-auto w-full max-w-md">
-          <div className="relative aspect-square overflow-hidden rounded-3xl border border-brand-border bg-white shadow-xl">
+        <div className="relative mx-auto w-full max-w-xl">
+          {/* Soft blue glow behind the image */}
+          <div
+            aria-hidden="true"
+            className="absolute -inset-6 rounded-[2.5rem] bg-brand-blue/15 blur-2xl"
+          />
+          <div className="relative overflow-hidden rounded-3xl shadow-2xl ring-1 ring-brand-border">
             <Image
-              src="/vial-hero.svg"
-              alt="Research-grade compound vial"
-              fill
+              src="/kingbio-lab-hero.png"
+              alt="Researcher analyzing King Bio Labs BPC-157 under a microscope in a certified lab"
+              width={1402}
+              height={1122}
               priority
-              sizes="(max-width: 1024px) 100vw, 480px"
-              className="object-contain p-10"
+              sizes="(max-width: 1024px) 100vw, 576px"
+              className="h-auto w-full"
             />
-          </div>
-
-          {/* Floating badge */}
-          <div className="absolute -bottom-5 -left-5 rounded-2xl border border-brand-border bg-white p-4 shadow-lg">
-            <p className="text-[11px] font-semibold uppercase tracking-wide text-muted-foreground">
-              Batch · KBL-2406
-            </p>
-            <p className="text-3xl font-bold text-brand-navy">99.7%</p>
-            <p className="text-[11px] text-muted-foreground">
-              HPLC verified purity
-            </p>
           </div>
         </div>
       </div>
