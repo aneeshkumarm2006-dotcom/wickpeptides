@@ -5,7 +5,7 @@ import { LegalArticle } from "@/components/legal/LegalArticle";
 export const metadata: Metadata = {
   title: "Research Use Disclaimer",
   description:
-    "All products sold by King Bio Labs are for in-vitro laboratory research use only and are not intended for human or veterinary use.",
+    "All products sold by Wick Peptides are for in-vitro laboratory research use only and are not intended for human or veterinary use.",
 };
 
 export default function ResearchDisclaimerPage() {
@@ -13,7 +13,7 @@ export default function ResearchDisclaimerPage() {
     <LegalArticle title="Research Use Disclaimer">
       <p>
         <strong>
-          All products sold by King Bio Labs are for in-vitro laboratory
+          All products sold by Wick Peptides are for in-vitro laboratory
           research use only.
         </strong>
       </p>

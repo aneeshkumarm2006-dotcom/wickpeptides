@@ -43,7 +43,7 @@ const TESTIMONIALS = [
     orders: 22,
     portrait: "/reviewer-lindqvist.svg",
     quote:
-      "We blind-tested against three other suppliers. King Bio Labs was the only sample that matched its certificate on every analyte. They have our standing order.",
+      "We blind-tested against three other suppliers. Wick Peptides was the only sample that matched its certificate on every analyte. They have our standing order.",
   },
   {
     name: "Dr. Sarah Chen, PhD",

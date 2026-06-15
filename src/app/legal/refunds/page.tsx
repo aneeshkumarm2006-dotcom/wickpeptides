@@ -21,10 +21,10 @@ export default function RefundsPage() {
         <p>
           Notify us within 7 days of delivery at{" "}
           <a
-            href="mailto:support@kingbiolabs.com"
+            href="mailto:support@wickpeptides.com"
             className="text-foreground underline-offset-4 hover:underline"
           >
-            support@kingbiolabs.com
+            support@wickpeptides.com
           </a>{" "}
           with order number and photos.
         </p>

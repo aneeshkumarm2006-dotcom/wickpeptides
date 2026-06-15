@@ -69,7 +69,7 @@ export function AgeGate() {
         </div>
 
         <p className="mt-6 font-heading text-sm font-bold uppercase tracking-widest text-brand-blue">
-          King Bio Labs
+          Wick Peptides
         </p>
 
         <h2

@@ -58,7 +58,7 @@ export function Hero() {
           <div className="relative overflow-hidden rounded-3xl shadow-2xl ring-1 ring-brand-border">
             <Image
               src="/kingbio-lab-hero.png"
-              alt="Researcher analyzing King Bio Labs BPC-157 under a microscope in a certified lab"
+              alt="Researcher analyzing Wick Peptides BPC-157 under a microscope in a certified lab"
               width={1402}
               height={1122}
               priority

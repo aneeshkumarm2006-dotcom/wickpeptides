@@ -7,7 +7,7 @@ import { SectionLabel } from "@/components/SectionLabel";
 export const metadata: Metadata = {
   title: "Sitemap",
   description:
-    "A full index of every page on the King Bio Labs website — shop, products, legal documents, and account pages.",
+    "A full index of every page on the Wick Peptides website — shop, products, legal documents, and account pages.",
 };
 
 type SitemapLink = { label: string; href: string; description?: string };
@@ -89,7 +89,7 @@ export default function SitemapPage() {
             Sitemap
           </h1>
           <p className="mt-6 leading-relaxed text-muted-foreground">
-            A complete index of every page on the King Bio Labs website.
+            A complete index of every page on the Wick Peptides website.
           </p>
         </div>
       </section>

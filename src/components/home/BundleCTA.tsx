@@ -8,7 +8,7 @@ export function BundleCTA() {
         <div className="flex flex-col items-center gap-6 rounded-3xl border border-brand-border bg-brand-light px-6 py-14 text-center">
           <Image
             src="/logo.svg"
-            alt="King Bio Labs"
+            alt="Wick Peptides"
             width={120}
             height={36}
             className="h-9 w-auto"

@@ -33,7 +33,7 @@ export function WhyKing() {
         <div className="flex flex-col gap-6">
           <Image
             src="/logo.svg"
-            alt="King Bio Labs"
+            alt="Wick Peptides"
             width={140}
             height={40}
             className="h-10 w-auto brightness-0 invert"

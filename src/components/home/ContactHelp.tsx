@@ -16,7 +16,7 @@ export function ContactHelp() {
         <div className="mx-auto mt-10 grid max-w-3xl grid-cols-1 gap-6 sm:grid-cols-2">
           {/* Email card */}
           <a
-            href="mailto:support@kingbiolabs.com"
+            href="mailto:support@wickpeptides.com"
             className="flex flex-col gap-3 rounded-2xl border border-brand-border bg-white p-6 transition-shadow hover:shadow-md"
           >
             <span className="flex size-11 items-center justify-center rounded-xl bg-brand-navy/5 text-brand-navy">
@@ -24,7 +24,7 @@ export function ContactHelp() {
             </span>
             <h3 className="text-base font-semibold text-brand-navy">Email Us</h3>
             <span className="text-sm font-medium text-brand-blue">
-              support@kingbiolabs.com
+              support@wickpeptides.com
             </span>
           </a>
 

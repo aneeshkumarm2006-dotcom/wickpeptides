@@ -21,7 +21,7 @@ const FEATURES = [
     icon: Clock,
     title: "Fast Support",
     text: "We respond within 24 hours, 7 days a week.",
-    href: "mailto:support@kingbiolabs.com",
+    href: "mailto:support@wickpeptides.com",
   },
 ];
 

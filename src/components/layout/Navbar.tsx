@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Menu, User, X } from "lucide-react";
@@ -46,16 +45,11 @@ export function Navbar() {
         <Link
           href="/"
           className="flex shrink-0 items-center"
-          aria-label="King Bio Labs home"
+          aria-label="Wick Peptides home"
         >
-          <Image
-            src="/king-bio-labs-logo-horizontal-transparent.png"
-            alt="King Bio Labs - Advanced Peptide Science"
-            width={1440}
-            height={720}
-            priority
-            className="h-12 w-auto object-contain sm:h-24"
-          />
+          <span className="text-lg font-bold uppercase tracking-widest text-foreground sm:text-2xl">
+            Wick Peptides
+          </span>
         </Link>
 
         {/* Center nav (desktop) */}

@@ -7,7 +7,7 @@ import { AuthForms } from "@/components/auth/AuthForms";
 export const metadata: Metadata = {
   title: "Sign In",
   description:
-    "Sign in or create an account to manage your King Bio Labs orders, download COAs, and track your research compound history.",
+    "Sign in or create an account to manage your Wick Peptides orders, download COAs, and track your research compound history.",
 };
 
 export default function AuthPage() {
@@ -24,7 +24,7 @@ export default function AuthPage() {
             </span>
             <SectionLabel>Account Access</SectionLabel>
             <h1 className="mt-3 text-3xl font-bold tracking-tight text-brand-navy">
-              King Bio Labs
+              Wick Peptides
             </h1>
             <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
               Sign in to manage orders, download COAs, and track your research

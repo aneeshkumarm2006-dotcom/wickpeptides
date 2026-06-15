@@ -6,7 +6,7 @@ import { CoaList } from "@/components/coas/CoaList";
 export const metadata: Metadata = {
   title: "COAs & Testing",
   description:
-    "Every King Bio Labs batch is independently tested by ISO-accredited labs using HPLC and mass spectrometry. Browse and download lot-specific Certificates of Analysis.",
+    "Every Wick Peptides batch is independently tested by ISO-accredited labs using HPLC and mass spectrometry. Browse and download lot-specific Certificates of Analysis.",
 };
 
 const METHODS = [

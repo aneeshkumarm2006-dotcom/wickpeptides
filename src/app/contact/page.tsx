@@ -6,7 +6,7 @@ import { ContactForm } from "@/components/contact/ContactForm";
 export const metadata: Metadata = {
   title: "Contact",
   description:
-    "Get in touch with King Bio Labs for product questions, order issues, COA requests, and general inquiries. We respond within 24 hours, 7 days a week.",
+    "Get in touch with Wick Peptides for product questions, order issues, COA requests, and general inquiries. We respond within 24 hours, 7 days a week.",
 };
 
 const INFO_CARDS = [
@@ -15,10 +15,10 @@ const INFO_CARDS = [
     title: "Email",
     body: (
       <a
-        href="mailto:support@kingbiolabs.com"
+        href="mailto:support@wickpeptides.com"
         className="text-foreground underline-offset-4 hover:underline"
       >
-        support@kingbiolabs.com
+        support@wickpeptides.com
       </a>
     ),
   },

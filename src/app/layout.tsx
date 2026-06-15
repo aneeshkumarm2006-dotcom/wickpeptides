@@ -29,10 +29,10 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://kingbiolabs.com"),
+  metadataBase: new URL("https://wickpeptides.com"),
   title: {
-    template: "%s — King Bio Labs",
-    default: "King Bio Labs — Verified Purity. No Exceptions.",
+    template: "%s — Wick Peptides",
+    default: "Wick Peptides — Verified Purity. No Exceptions.",
   },
   description:
     "Research-grade compounds from certified synthesis facilities. Third-party tested. Full COA on every batch.",

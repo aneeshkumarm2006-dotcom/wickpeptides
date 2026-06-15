@@ -13,7 +13,7 @@ import { SectionLabel } from "@/components/SectionLabel";
 export const metadata: Metadata = {
   title: "My Account",
   description:
-    "Manage your King Bio Labs account, view order history, and download Certificates of Analysis.",
+    "Manage your Wick Peptides account, view order history, and download Certificates of Analysis.",
 };
 
 const ACCOUNT_SECTIONS = [

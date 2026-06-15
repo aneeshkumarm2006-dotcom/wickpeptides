@@ -4,12 +4,12 @@ import { ShieldCheck, FlaskConical, Fingerprint } from "lucide-react";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "King Bio Labs exists for serious researchers who refuse to compromise. Every compound is independently tested, every COA published, every batch traceable from synthesis to bench.",
+    "Wick Peptides exists for serious researchers who refuse to compromise. Every compound is independently tested, every COA published, every batch traceable from synthesis to bench.",
 };
 
 const PARAGRAPHS = [
   "We named the company King because we refuse to operate beneath the standard the research compounds industry has tolerated for too long. Most suppliers make claims they cannot back up. We back up everything we ship.",
-  "King Bio Labs was built to be different. Every compound we carry is independently tested. Every COA is published. Every batch is traceable from synthesis to your bench.",
+  "Wick Peptides was built to be different. Every compound we carry is independently tested. Every COA is published. Every batch is traceable from synthesis to your bench.",
   "We are not a supplement brand. We are not a wellness company. We exist for serious researchers who refuse to compromise on what enters their lab.",
 ];
 

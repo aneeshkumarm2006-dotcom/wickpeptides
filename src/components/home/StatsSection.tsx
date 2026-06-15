@@ -42,7 +42,7 @@ const METRICS = [
 ];
 
 const PURITY_COMPARISON = [
-  { name: "King Bio Labs", value: 99.7, highlight: true },
+  { name: "Wick Peptides", value: 99.7, highlight: true },
   { name: "Supplier A", value: 96.2 },
   { name: "Supplier B", value: 94.8 },
   { name: "Supplier C", value: 92.1 },

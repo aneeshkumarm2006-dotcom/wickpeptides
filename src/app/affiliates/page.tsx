@@ -7,7 +7,7 @@ import { SectionLabel } from "@/components/SectionLabel";
 export const metadata: Metadata = {
   title: "Affiliate Program",
   description:
-    "Join the King Bio Labs affiliate program. Earn commissions by referring qualified researchers to the most trusted source for research-grade compounds.",
+    "Join the Wick Peptides affiliate program. Earn commissions by referring qualified researchers to the most trusted source for research-grade compounds.",
 };
 
 const BENEFITS = [
@@ -75,7 +75,7 @@ export default function AffiliatesPage() {
             Affiliate Program
           </h1>
           <p className="mt-6 leading-relaxed text-muted-foreground">
-            Refer qualified researchers to King Bio Labs and earn 15% on every
+            Refer qualified researchers to Wick Peptides and earn 15% on every
             order. Our program is built for scientists, clinicians, and
             professionals who trust the standard we set.
           </p>
@@ -147,7 +147,7 @@ export default function AffiliatesPage() {
           </p>
           <div className="mt-8 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
             <a
-              href="mailto:affiliates@kingbiolabs.com"
+              href="mailto:affiliates@wickpeptides.com"
               className="inline-flex h-12 items-center gap-2 rounded-xl bg-brand-navy px-8 text-sm font-semibold text-white transition-colors hover:bg-brand-blue"
             >
               Apply via Email
