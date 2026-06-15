@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 400" fill="none">
+  <rect width="300" height="400" fill="#f8f9fb"/>
+  <!-- Vial body -->
+  <rect x="120" y="80" width="60" height="220" rx="30" fill="#e5e7eb" stroke="#0d1b4d" stroke-width="2"/>
+  <!-- Vial cap -->
+  <rect x="130" y="60" width="40" height="30" rx="4" fill="#0d1b4d"/>
+  <!-- Liquid fill -->
+  <rect x="122" y="160" width="56" height="138" rx="0 0 28 28" fill="#1e3a8a" opacity="0.7"/>
+  <!-- Label -->
+  <rect x="128" y="170" width="44" height="80" rx="4" fill="white" opacity="0.9"/>
+  <text x="150" y="195" font-family="Inter, sans-serif" font-size="6" font-weight="700" fill="#0d1b4d" text-anchor="middle">KING BIO LABS</text>
+  <text x="150" y="210" font-family="Inter, sans-serif" font-size="5" fill="#0d1b4d" text-anchor="middle">Research Grade</text>
+  <text x="150" y="225" font-family="Inter, sans-serif" font-size="6" font-weight="600" fill="#1e3a8a" text-anchor="middle">99.7% Pure</text>
+  <text x="150" y="240" font-family="Inter, sans-serif" font-size="4" fill="#6b7280" text-anchor="middle">HPLC Verified</text>
+</svg>
