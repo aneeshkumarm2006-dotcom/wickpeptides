@@ -11,9 +11,11 @@ export const metadata: Metadata = {
 export default function ResearchDisclaimerPage() {
   return (
     <LegalArticle title="Research Use Disclaimer">
-      <p className="font-semibold leading-relaxed text-brand-navy">
-        All products sold by King Bio Labs are for in-vitro laboratory research
-        use only.
+      <p>
+        <strong>
+          All products sold by King Bio Labs are for in-vitro laboratory
+          research use only.
+        </strong>
       </p>
 
       <p className="leading-relaxed text-muted-foreground">

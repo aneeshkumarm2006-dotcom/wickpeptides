@@ -68,5 +68,5 @@ export const COAS: COAEntry[] = [
 
 export function formatCOADate(dateStr: string): string {
   const [year, month, day] = dateStr.split("-");
-  return `${parseInt(month)}/${parseInt(day)}/${year}`;
+  return `${day}/${month}/${year}`;
 }

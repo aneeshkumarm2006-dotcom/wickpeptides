@@ -1,5 +1,3 @@
-import { SectionLabel } from "@/components/SectionLabel";
-
 type Props = {
   title: string;
   children: React.ReactNode;
@@ -7,25 +5,19 @@ type Props = {
 
 export function LegalArticle({ title, children }: Props) {
   return (
-    <>
-      <section className="border-b border-brand-border bg-white">
-        <div className="mx-auto max-w-3xl px-6 py-16 lg:py-24">
-          <SectionLabel>Legal</SectionLabel>
-          <h1 className="mt-4 text-4xl font-bold tracking-tight text-brand-navy sm:text-5xl">
-            {title}
-          </h1>
-          <p className="mt-4 text-sm text-muted-foreground">
-            Last updated: June 2026
-          </p>
-        </div>
-      </section>
-
-      <section className="bg-white">
-        <div className="mx-auto max-w-3xl px-6 py-12 lg:py-16">
-          <article className="flex flex-col gap-8">{children}</article>
-        </div>
-      </section>
-    </>
+    <article className="mx-auto max-w-3xl px-4 py-16 sm:px-6">
+      <p className="text-eyebrow mb-3">LEGAL</p>
+      <h1 className="font-display text-4xl font-bold">{title}</h1>
+      <p className="mt-2 text-xs text-muted-foreground">
+        Last updated: June 2026
+      </p>
+      <div className="prose mt-8 max-w-none space-y-4 text-sm leading-relaxed text-muted-foreground [&_h2]:mt-6 [&_h2]:font-display [&_h2]:text-lg [&_h2]:font-semibold [&_h2]:text-foreground [&_strong]:text-foreground">
+        {children}
+        <p className="text-xs text-muted-foreground">
+          Placeholder text. Replace with reviewed legal copy before launch.
+        </p>
+      </div>
+    </article>
   );
 }
 
@@ -36,12 +28,10 @@ type SectionProps = {
 
 export function LegalSection({ heading, children }: SectionProps) {
   return (
-    <div className="flex flex-col gap-3">
-      <h2 className="text-xl font-semibold text-brand-navy">{heading}</h2>
-      <div className="flex flex-col gap-3 leading-relaxed text-muted-foreground">
-        {children}
-      </div>
-    </div>
+    <>
+      <h2>{heading}</h2>
+      {children}
+    </>
   );
 }
 

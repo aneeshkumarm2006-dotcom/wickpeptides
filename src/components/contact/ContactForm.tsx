@@ -48,26 +48,22 @@ export function ContactForm() {
   return (
     <form
       onSubmit={handleSubmit}
-      className="flex flex-col gap-5 rounded-2xl border border-brand-border bg-white p-6 sm:p-8"
+      className="flex flex-col gap-5 rounded-lg border bg-surface p-6 sm:p-8"
     >
       <div className="flex flex-col gap-1.5">
-        <Label htmlFor="contact-name" className="text-brand-navy">
-          Name
-        </Label>
+        <Label htmlFor="contact-name">Name</Label>
         <Input
           id="contact-name"
           value={name}
           onChange={(e) => setName(e.target.value)}
           placeholder="Your name"
           required
-          className="h-11 border-brand-border text-brand-navy"
+          className="h-11"
         />
       </div>
 
       <div className="flex flex-col gap-1.5">
-        <Label htmlFor="contact-email" className="text-brand-navy">
-          Email
-        </Label>
+        <Label htmlFor="contact-email">Email</Label>
         <Input
           id="contact-email"
           type="email"
@@ -75,14 +71,12 @@ export function ContactForm() {
           onChange={(e) => setEmail(e.target.value)}
           placeholder="you@example.com"
           required
-          className="h-11 border-brand-border text-brand-navy"
+          className="h-11"
         />
       </div>
 
       <div className="flex flex-col gap-1.5">
-        <Label htmlFor="contact-subject" className="text-brand-navy">
-          Subject
-        </Label>
+        <Label htmlFor="contact-subject">Subject</Label>
         <Select
           items={SUBJECT_OPTIONS}
           value={subject}
@@ -92,7 +86,7 @@ export function ContactForm() {
         >
           <SelectTrigger
             id="contact-subject"
-            className="w-full justify-between border-brand-border text-brand-navy data-[size=default]:h-11"
+            className="w-full justify-between data-[size=default]:h-11"
           >
             <SelectValue />
           </SelectTrigger>
@@ -107,9 +101,7 @@ export function ContactForm() {
       </div>
 
       <div className="flex flex-col gap-1.5">
-        <Label htmlFor="contact-message" className="text-brand-navy">
-          Message
-        </Label>
+        <Label htmlFor="contact-message">Message</Label>
         <textarea
           id="contact-message"
           value={message}
@@ -117,15 +109,15 @@ export function ContactForm() {
           placeholder="How can we help with your research?"
           required
           rows={6}
-          className="w-full min-w-0 resize-y rounded-lg border border-brand-border bg-transparent px-3 py-2.5 text-base text-brand-navy outline-none transition-colors placeholder:text-muted-foreground focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 md:text-sm"
+          className="w-full min-w-0 resize-y rounded-md border border-input bg-transparent px-3 py-2.5 text-base shadow-sm outline-none transition-colors placeholder:text-muted-foreground focus-visible:ring-1 focus-visible:ring-ring md:text-sm"
         />
       </div>
 
       <button
         type="submit"
         className={cn(
-          "flex h-12 w-full items-center justify-center gap-2 rounded-xl px-5 text-sm font-semibold text-white transition-colors",
-          sent ? "bg-emerald-600" : "bg-brand-navy hover:bg-brand-blue"
+          "flex h-12 w-full items-center justify-center gap-2 rounded-md px-5 text-sm font-semibold text-primary-foreground transition-colors",
+          sent ? "bg-success" : "bg-primary hover:bg-primary/90"
         )}
       >
         {sent ? (

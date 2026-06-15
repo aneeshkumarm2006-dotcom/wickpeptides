@@ -37,7 +37,7 @@ export default function PrivacyPage() {
           by contacting{" "}
           <a
             href="mailto:support@kingbiolabs.com"
-            className="text-brand-blue underline-offset-4 hover:underline"
+            className="text-foreground underline-offset-4 hover:underline"
           >
             support@kingbiolabs.com
           </a>

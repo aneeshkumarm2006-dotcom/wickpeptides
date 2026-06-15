@@ -1,7 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import { Download, FileText, Search } from "lucide-react";
+import { Download } from "lucide-react";
 
 import { COAS, formatCOADate } from "@/lib/data/coas";
 
@@ -22,59 +22,40 @@ export function CoaList() {
   return (
     <div>
       {/* Header + search */}
-      <div className="flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
-        <h2 className="text-3xl font-bold tracking-tight text-brand-navy">
-          Published COAs
-        </h2>
-        <div className="relative w-full sm:max-w-xs">
-          <Search className="pointer-events-none absolute left-4 top-1/2 size-5 -translate-y-1/2 text-muted-foreground" />
-          <input
-            type="search"
-            value={search}
-            onChange={(e) => setSearch(e.target.value)}
-            placeholder="Search by product or batch…"
-            className="h-12 w-full rounded-xl border border-brand-border bg-white py-3 pl-12 pr-4 text-base text-brand-navy outline-none focus:border-brand-blue"
-          />
-        </div>
+      <div className="mb-6 flex flex-wrap items-center justify-between gap-4">
+        <h2 className="font-display text-2xl font-bold">Published COAs</h2>
+        <input
+          type="search"
+          value={search}
+          onChange={(e) => setSearch(e.target.value)}
+          placeholder="Search by product or batch…"
+          className="flex h-9 w-full max-w-xs rounded-md border border-input bg-transparent px-3 py-1 text-base shadow-sm transition-colors placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50 md:text-sm"
+        />
       </div>
 
       {/* COA grid */}
       {filtered.length > 0 ? (
-        <div className="mt-10 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
           {filtered.map((coa) => (
-            <div
-              key={coa.id}
-              className="flex flex-col gap-4 rounded-2xl border border-brand-border bg-white p-6 transition-shadow hover:shadow-md"
-            >
-              <span className="flex size-11 items-center justify-center rounded-xl bg-brand-navy/5 text-brand-navy">
-                <FileText className="size-5" />
-              </span>
-              <div className="flex flex-col gap-1">
-                <h3 className="text-base font-semibold text-brand-navy">
-                  {coa.productName}
-                </h3>
-                <p className="font-mono text-sm text-muted-foreground">
-                  {coa.batchNumber}
-                </p>
-                <p className="text-sm text-muted-foreground">
-                  Tested {formatCOADate(coa.testedDate)}
-                </p>
+            <div key={coa.id} className="rounded-lg border bg-surface p-4">
+              <div className="text-eyebrow truncate">{coa.productSlug}</div>
+              <div className="mt-1 font-mono text-sm">{coa.batchNumber}</div>
+              <div className="mt-1 text-xs text-muted-foreground">
+                Tested {formatCOADate(coa.testedDate)}
               </div>
               <a
                 href={coa.downloadUrl ?? "#"}
                 download
-                className="mt-auto inline-flex w-fit items-center gap-2 text-sm font-medium text-brand-blue underline-offset-4 hover:underline"
+                className="mt-3 inline-flex h-8 w-full items-center justify-center gap-2 whitespace-nowrap rounded-md border border-input bg-background px-3 text-xs font-medium shadow-sm transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
               >
-                <Download className="size-4" />
-                Download COA
+                <Download className="mr-2 h-3.5 w-3.5" aria-hidden="true" />{" "}
+                Download
               </a>
             </div>
           ))}
         </div>
       ) : (
-        <p className="mt-10 text-muted-foreground">
-          No COAs match “{search}”.
-        </p>
+        <p className="text-muted-foreground">No COAs match “{search}”.</p>
       )}
     </div>
   );

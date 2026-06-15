@@ -22,7 +22,7 @@ export default function RefundsPage() {
           Notify us within 7 days of delivery at{" "}
           <a
             href="mailto:support@kingbiolabs.com"
-            className="text-brand-blue underline-offset-4 hover:underline"
+            className="text-foreground underline-offset-4 hover:underline"
           >
             support@kingbiolabs.com
           </a>{" "}
