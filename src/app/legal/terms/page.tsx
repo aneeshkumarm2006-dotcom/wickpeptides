@@ -5,14 +5,14 @@ import { LegalArticle, LegalSection } from "@/components/legal/LegalArticle";
 export const metadata: Metadata = {
   title: "Terms of Service",
   description:
-    "These Terms of Service govern your use of the Wick Peptides website and the purchase of research-grade compounds listed on it.",
+    "These Terms of Service govern your use of the Magic Peptides website and the purchase of research-grade compounds listed on it.",
 };
 
 export default function TermsPage() {
   return (
     <LegalArticle title="Terms of Service">
       <p className="leading-relaxed text-muted-foreground">
-        These Terms of Service govern your use of the Wick Peptides website and
+        These Terms of Service govern your use of the Magic Peptides website and
         the purchase of research-grade compounds listed on it. By accessing this
         site you agree to these terms.
       </p>
@@ -35,7 +35,7 @@ export default function TermsPage() {
 
       <LegalSection heading="Limitation of Liability">
         <p>
-          To the maximum extent permitted by law, Wick Peptides is not liable
+          To the maximum extent permitted by law, Magic Peptides is not liable
           for misuse of any product. Buyer assumes all responsibility for proper
           handling, storage and disposal.
         </p>

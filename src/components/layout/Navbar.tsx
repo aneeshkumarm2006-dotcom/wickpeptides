@@ -87,7 +87,7 @@ export function Navbar() {
           <Link
             href="/"
             className="flex shrink-0 items-center gap-2.5 justify-self-center"
-            aria-label="Wick Peptides home"
+            aria-label="Magic Peptides home"
           >
             <span
               aria-hidden="true"
@@ -96,7 +96,7 @@ export function Navbar() {
               W
             </span>
             <span className="font-display text-lg font-extrabold tracking-tight text-brand-navy sm:text-xl">
-              Wick Peptides
+              Magic Peptides
             </span>
           </Link>
 

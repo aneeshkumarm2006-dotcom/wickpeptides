@@ -29,7 +29,7 @@ export function CartDrawer() {
         <SheetHeader className="gap-0 border-border p-0">
           <div className="flex items-center gap-2.5 border-b border-border px-5 py-3 font-mono text-[11px] uppercase tracking-[0.22em] text-brand-blue">
             <span aria-hidden="true" className="size-1.5 shrink-0 bg-brand-navy" />
-            Wick Peptides / Cart
+            Magic Peptides / Cart
           </div>
           <div className="flex items-center justify-between gap-2 px-5 py-4">
             <SheetTitle className="flex items-center gap-2.5 font-display text-xl font-bold text-brand-navy">

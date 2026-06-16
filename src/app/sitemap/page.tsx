@@ -7,7 +7,7 @@ import { SectionLabel } from "@/components/SectionLabel";
 export const metadata: Metadata = {
   title: "Sitemap",
   description:
-    "A complete directory of every page across the Wick Peptides website — shop, products, legal documents, and account pages.",
+    "A complete directory of every page across the Magic Peptides website — shop, products, legal documents, and account pages.",
 };
 
 type SitemapLink = { label: string; href: string; description?: string };
@@ -99,7 +99,7 @@ export default function SitemapPage() {
             Sitemap
           </h1>
           <p className="mt-5 max-w-xl leading-relaxed text-white/70">
-            A full directory of every page across the Wick Peptides website.
+            A full directory of every page across the Magic Peptides website.
           </p>
         </div>
       </section>

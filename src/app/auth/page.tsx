@@ -6,7 +6,7 @@ import { AuthForms } from "@/components/auth/AuthForms";
 export const metadata: Metadata = {
   title: "Sign In",
   description:
-    "Log in or register to manage your Wick Peptides orders, retrieve COAs, and follow your research compound history.",
+    "Log in or register to manage your Magic Peptides orders, retrieve COAs, and follow your research compound history.",
 };
 
 export default function AuthPage() {

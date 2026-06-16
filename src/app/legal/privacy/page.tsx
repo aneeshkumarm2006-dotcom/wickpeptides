@@ -5,14 +5,14 @@ import { LegalArticle, LegalSection } from "@/components/legal/LegalArticle";
 export const metadata: Metadata = {
   title: "Privacy Policy",
   description:
-    "This Privacy Policy describes how Wick Peptides collects, uses and protects information about you when you visit our website or place an order.",
+    "This Privacy Policy describes how Magic Peptides collects, uses and protects information about you when you visit our website or place an order.",
 };
 
 export default function PrivacyPage() {
   return (
     <LegalArticle title="Privacy Policy">
       <p className="leading-relaxed text-muted-foreground">
-        This Privacy Policy describes how Wick Peptides collects, uses and
+        This Privacy Policy describes how Magic Peptides collects, uses and
         protects information about you when you visit our website or place an
         order.
       </p>

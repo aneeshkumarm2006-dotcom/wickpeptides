@@ -19,7 +19,7 @@ const METRICS = [
 ];
 
 const PURITY_COMPARISON = [
-  { name: "Wick Peptides", value: 99.7, highlight: true },
+  { name: "Magic Peptides", value: 99.7, highlight: true },
   { name: "Supplier A", value: 96.2 },
   { name: "Supplier B", value: 94.8 },
   { name: "Supplier C", value: 92.1 },
@@ -167,7 +167,7 @@ export function StatsSection() {
           index="04"
           label="The Numbers Back It Up"
           title="The Benchmark For Researchers Who Won't Settle."
-          lede="Independent labs, performance clinicians, and applied research teams across four continents ask for Wick Peptides by name. Here is what sets us apart."
+          lede="Independent labs, performance clinicians, and applied research teams across four continents ask for Magic Peptides by name. Here is what sets us apart."
         />
 
         {/* Metric ledger */}

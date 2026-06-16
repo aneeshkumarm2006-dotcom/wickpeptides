@@ -6,12 +6,12 @@ import { SectionLabel } from "@/components/SectionLabel";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "Wick Peptides exists for serious researchers who refuse to compromise. Every compound is independently tested, every COA published, every batch traceable from synthesis to bench.",
+    "Magic Peptides exists for serious researchers who refuse to compromise. Every compound is independently tested, every COA published, every batch traceable from synthesis to bench.",
 };
 
 const PARAGRAPHS = [
-  "We built Wick Peptides because we refuse to operate beneath the standard the research-compounds industry has tolerated for far too long. Most suppliers make claims they can’t back up. We back up everything we ship.",
-  "Wick Peptides was built to work differently. Every compound we carry is independently tested, every COA is published, and every batch is traceable from synthesis straight to your bench.",
+  "We built Magic Peptides because we refuse to operate beneath the standard the research-compounds industry has tolerated for far too long. Most suppliers make claims they can’t back up. We back up everything we ship.",
+  "Magic Peptides was built to work differently. Every compound we carry is independently tested, every COA is published, and every batch is traceable from synthesis straight to your bench.",
   "We’re not a supplement brand, and we’re not a wellness company. We exist for serious researchers who won’t compromise on what enters their lab.",
 ];
 
@@ -40,7 +40,7 @@ export default function AboutPage() {
       <section className="border-b border-border bg-brand-navy text-white">
         <div className="mx-auto w-full max-w-[1320px] px-6 py-20 lg:px-10 lg:py-32">
           <SectionLabel className="text-white/70 [&>span:first-child]:bg-white/70">
-            About / Wick Peptides
+            About / Magic Peptides
           </SectionLabel>
           <h1 className="mt-10 font-display text-[3.25rem] font-extrabold leading-[0.92] tracking-tight sm:text-7xl lg:text-[7.5rem]">
             The Standard.

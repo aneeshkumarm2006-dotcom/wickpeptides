@@ -31,8 +31,8 @@ const montserrat = Montserrat({
 export const metadata: Metadata = {
   metadataBase: new URL("https://wickpeptides.com"),
   title: {
-    template: "%s — Wick Peptides",
-    default: "Wick Peptides — Confirmed Purity. Zero Compromise.",
+    template: "%s — Magic Peptides",
+    default: "Magic Peptides — Confirmed Purity. Zero Compromise.",
   },
   description:
     "Laboratory-grade compounds synthesized at certified facilities and verified by independent third-party labs. A full COA ships with every batch.",

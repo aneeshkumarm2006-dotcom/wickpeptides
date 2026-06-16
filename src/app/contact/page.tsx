@@ -7,7 +7,7 @@ import { ContactForm } from "@/components/contact/ContactForm";
 export const metadata: Metadata = {
   title: "Contact",
   description:
-    "Reach Wick Peptides about product questions, order issues, COA requests, and general inquiries. We reply within 24 hours, 7 days a week.",
+    "Reach Magic Peptides about product questions, order issues, COA requests, and general inquiries. We reply within 24 hours, 7 days a week.",
 };
 
 const INFO_CARDS = [
@@ -84,7 +84,7 @@ export default function ContactPage() {
               ))}
             </dl>
             <p className="mt-8 font-mono text-[11px] uppercase leading-relaxed tracking-[0.18em] text-brand-navy/45">
-              Wick Peptides / Research-Grade Compounds
+              Magic Peptides / Research-Grade Compounds
             </p>
           </aside>
         </div>

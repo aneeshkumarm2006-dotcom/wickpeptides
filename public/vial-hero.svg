@@ -8,7 +8,7 @@
   <rect x="122" y="160" width="56" height="138" rx="0 0 28 28" fill="#1e3a8a" opacity="0.7"/>
   <!-- Label -->
   <rect x="128" y="170" width="44" height="80" rx="4" fill="white" opacity="0.9"/>
-  <text x="150" y="195" font-family="Inter, sans-serif" font-size="6" font-weight="700" fill="#0d1b4d" text-anchor="middle">WICK PEPTIDES</text>
+  <text x="150" y="195" font-family="Inter, sans-serif" font-size="6" font-weight="700" fill="#0d1b4d" text-anchor="middle">MAGIC PEPTIDES</text>
   <text x="150" y="210" font-family="Inter, sans-serif" font-size="5" fill="#0d1b4d" text-anchor="middle">Research Grade</text>
   <text x="150" y="225" font-family="Inter, sans-serif" font-size="6" font-weight="600" fill="#1e3a8a" text-anchor="middle">99.7% Pure</text>
   <text x="150" y="240" font-family="Inter, sans-serif" font-size="4" fill="#6b7280" text-anchor="middle">HPLC Verified</text>

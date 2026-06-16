@@ -40,7 +40,7 @@ export function WhyWeLead() {
           <p className="max-w-sm leading-relaxed text-white/70">
             For too long the research-compounds industry has accepted rough
             edges — uneven purity, missing paperwork, suppliers who keep you
-            guessing. We built Wick Peptides to operate above that line.
+            guessing. We built Magic Peptides to operate above that line.
           </p>
         </div>
 

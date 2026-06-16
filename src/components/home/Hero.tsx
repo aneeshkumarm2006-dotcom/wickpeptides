@@ -71,7 +71,7 @@ export function Hero() {
               <div className="relative aspect-[4/3] w-full">
                 <Image
                   src="/wickpeptides-hero.png"
-                  alt="Wick Peptides research vial"
+                  alt="Magic Peptides research vial"
                   fill
                   preload
                   sizes="(max-width: 1024px) 100vw, 520px"

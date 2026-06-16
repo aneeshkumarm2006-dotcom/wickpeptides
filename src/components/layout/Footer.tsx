@@ -95,7 +95,7 @@ export function Footer() {
             aria-hidden="true"
             className="block font-display text-[15vw] font-extrabold leading-none tracking-tighter text-white/[0.07] lg:text-[10rem]"
           >
-            Wick Peptides
+            Magic Peptides
           </span>
         </div>
 
@@ -113,11 +113,11 @@ export function Footer() {
               ))}
             </div>
             <p className="font-mono text-[11px] uppercase tracking-[0.16em] text-white/45">
-              © 2026 Wick Peptides LLC. All rights reserved.
+              © 2026 Magic Peptides LLC. All rights reserved.
             </p>
           </div>
           <p className="max-w-3xl text-xs leading-relaxed text-white/45">
-            Wick Peptides provides research-use-only materials intended for
+            Magic Peptides provides research-use-only materials intended for
             laboratory applications. Batch documentation and COAs are provided
             with each product. Not for human consumption. Email:
             support@wickpeptides.com.

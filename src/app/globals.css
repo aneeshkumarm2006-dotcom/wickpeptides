@@ -17,7 +17,7 @@
   --color-success: var(--success);
   --color-success-foreground: var(--success-foreground);
 
-  /* Wick Peptides brand colors */
+  /* Magic Peptides brand colors */
   --color-brand-navy: #0d1b4d;
   --color-brand-blue: #1e3a8a;
   --color-brand-white: #ffffff;
@@ -170,7 +170,7 @@
 }
 
 /* ============================================================
-   Wick Peptides — bespoke utilities (ported from production CSS)
+   Magic Peptides — bespoke utilities (ported from production CSS)
    ============================================================ */
 
 @utility text-eyebrow {

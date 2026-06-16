@@ -68,7 +68,7 @@ export function AgeGate() {
         <div className="flex items-center justify-between gap-3 border-b border-border px-6 py-3 font-mono text-[11px] uppercase tracking-[0.22em]">
           <span className="flex items-center gap-2.5 text-brand-blue">
             <span aria-hidden="true" className="size-1.5 bg-brand-navy" />
-            Wick Peptides
+            Magic Peptides
           </span>
           <ShieldCheck className="size-4 text-brand-navy/45" aria-hidden="true" />
         </div>

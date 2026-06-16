@@ -13,7 +13,7 @@ import { SectionHeader } from "@/components/SectionHeader";
 export const metadata: Metadata = {
   title: "My Account",
   description:
-    "Oversee your Wick Peptides account, review your order history, and retrieve Certificates of Analysis.",
+    "Oversee your Magic Peptides account, review your order history, and retrieve Certificates of Analysis.",
 };
 
 const ACCOUNT_SECTIONS = [

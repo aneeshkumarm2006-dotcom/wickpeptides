@@ -8,7 +8,7 @@ import { SectionLabel } from "@/components/SectionLabel";
 export const metadata: Metadata = {
   title: "Affiliate Program",
   description:
-    "Become a Wick Peptides affiliate. Earn commissions when you refer qualified researchers to the most trusted source for research-grade compounds.",
+    "Become a Magic Peptides affiliate. Earn commissions when you refer qualified researchers to the most trusted source for research-grade compounds.",
 };
 
 const BENEFITS = [
@@ -78,7 +78,7 @@ export default function AffiliatesPage() {
             Program
           </h1>
           <p className="mt-8 max-w-2xl border-t border-border pt-8 text-lg leading-relaxed text-muted-foreground">
-            Send qualified researchers to Wick Peptides and earn 15% on every
+            Send qualified researchers to Magic Peptides and earn 15% on every
             order. The program is designed for scientists, clinicians, and
             professionals who rely on the standard we set.
           </p>
