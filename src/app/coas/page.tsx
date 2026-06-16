@@ -31,37 +31,59 @@ export default function CoasPage() {
   return (
     <main className="flex-1">
       {/* Intro */}
-      <section className="border-b">
-        <div className="mx-auto max-w-4xl px-4 py-20 text-center sm:px-6">
-          <p className="text-eyebrow mb-3">TRANSPARENCY</p>
-          <h1 className="font-display text-4xl font-bold sm:text-5xl">
-            Every Batch Tested. Every Result Published.
-          </h1>
-          <p className="mx-auto mt-5 max-w-2xl text-muted-foreground">
-            No compound leaves our facility until an independent accredited
-            laboratory has verified it. A Certificate of Analysis is linked to
-            every batch, so you can confirm any vial you receive by its batch
-            number.
-          </p>
+      <section className="bg-white">
+        <div className="mx-auto w-full max-w-[1320px] px-6 lg:px-10">
+          <div className="flex flex-wrap items-center justify-between gap-3 border-b border-border py-4 font-mono text-[11px] uppercase tracking-[0.22em]">
+            <span className="flex items-center gap-2.5 text-brand-blue">
+              <span aria-hidden="true" className="size-1.5 bg-brand-navy" />
+              TRANSPARENCY
+            </span>
+            <span className="hidden text-brand-navy/45 sm:inline">
+              Wick Peptides / Certificates of Analysis
+            </span>
+          </div>
+
+          <div className="grid items-end gap-x-10 gap-y-6 py-16 lg:grid-cols-12 lg:py-24">
+            <h1 className="font-display text-[2.75rem] font-extrabold leading-[1.0] tracking-tight text-brand-navy sm:text-5xl lg:col-span-7 lg:text-6xl">
+              Every Batch Tested. Every Result Published.
+            </h1>
+            <p className="self-end text-base leading-relaxed text-muted-foreground lg:col-span-5">
+              No compound leaves our facility until an independent accredited
+              laboratory has verified it. A Certificate of Analysis is linked to
+              every batch, so you can confirm any vial you receive by its batch
+              number.
+            </p>
+          </div>
         </div>
       </section>
 
-      {/* Method cards */}
-      <section className="border-b bg-surface/40">
-        <div className="mx-auto grid max-w-6xl gap-6 px-4 py-14 sm:grid-cols-3 sm:px-6">
-          {METHODS.map(({ icon: Icon, title, text }) => (
-            <div key={title} className="rounded-lg border bg-surface p-6">
-              <Icon className="mb-3 h-5 w-5 text-primary" aria-hidden="true" />
-              <h3 className="font-display font-semibold">{title}</h3>
-              <p className="mt-2 text-sm text-muted-foreground">{text}</p>
-            </div>
-          ))}
+      {/* Method ledger */}
+      <section className="border-t border-border bg-white">
+        <div className="mx-auto w-full max-w-[1320px] px-6 py-14 lg:px-10 lg:py-16">
+          <div className="grid gap-px border border-border bg-border sm:grid-cols-3">
+            {METHODS.map(({ icon: Icon, title, text }, i) => (
+              <div key={title} className="flex flex-col gap-4 bg-white p-6 lg:p-8">
+                <div className="flex items-center justify-between gap-3">
+                  <span className="font-mono text-[11px] uppercase tracking-[0.22em] text-brand-navy/50">
+                    §{String(i + 1).padStart(2, "0")}
+                  </span>
+                  <Icon className="size-5 shrink-0 text-brand-blue" aria-hidden="true" />
+                </div>
+                <h3 className="font-display text-lg font-semibold text-brand-navy">
+                  {title}
+                </h3>
+                <p className="text-sm leading-relaxed text-muted-foreground">
+                  {text}
+                </p>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
       {/* Published COAs */}
-      <section>
-        <div className="mx-auto max-w-6xl px-4 py-14 sm:px-6">
+      <section className="border-t border-border bg-white">
+        <div className="mx-auto w-full max-w-[1320px] px-6 py-20 lg:px-10 lg:py-28">
           <CoaList />
         </div>
       </section>

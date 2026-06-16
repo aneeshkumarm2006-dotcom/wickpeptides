@@ -22,40 +22,62 @@ export function CoaList() {
   return (
     <div>
       {/* Header + search */}
-      <div className="mb-6 flex flex-wrap items-center justify-between gap-4">
-        <h2 className="font-display text-2xl font-bold">Available COAs</h2>
+      <div className="flex flex-wrap items-end justify-between gap-4 border-t border-border pt-6">
+        <h2 className="font-display text-2xl font-bold tracking-tight text-brand-navy sm:text-3xl">
+          Available COAs
+        </h2>
         <input
           type="search"
           value={search}
           onChange={(e) => setSearch(e.target.value)}
           placeholder="Look up a product or batch…"
-          className="flex h-9 w-full max-w-xs rounded-md border border-input bg-transparent px-3 py-1 text-base shadow-sm transition-colors placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50 md:text-sm"
+          className="flex h-11 w-full max-w-xs rounded-none border border-brand-border bg-white px-4 font-mono text-[13px] uppercase tracking-[0.08em] transition-colors placeholder:normal-case placeholder:tracking-normal placeholder:text-muted-foreground focus-visible:border-brand-navy focus-visible:outline-none"
         />
       </div>
 
-      {/* COA grid */}
+      {/* COA ledger */}
       {filtered.length > 0 ? (
-        <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-          {filtered.map((coa) => (
-            <div key={coa.id} className="rounded-lg border bg-surface p-4">
-              <div className="text-eyebrow truncate">{coa.productSlug}</div>
-              <div className="mt-1 font-mono text-sm">{coa.batchNumber}</div>
-              <div className="mt-1 text-xs text-muted-foreground">
-                Tested {formatCOADate(coa.testedDate)}
-              </div>
-              <a
-                href={coa.downloadUrl ?? "#"}
-                download
-                className="mt-3 inline-flex h-8 w-full items-center justify-center gap-2 whitespace-nowrap rounded-md border border-input bg-background px-3 text-xs font-medium shadow-sm transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
+        <div className="mt-8 border border-border">
+          {/* Ledger header row */}
+          <div className="hidden grid-cols-[minmax(0,1fr)_minmax(0,1.1fr)_8rem_8rem] items-center gap-4 border-b border-border bg-surface px-6 py-3 font-mono text-[10px] uppercase tracking-[0.2em] text-muted-foreground lg:grid">
+            <span>Product</span>
+            <span>Batch No.</span>
+            <span>Tested</span>
+            <span className="text-right">Certificate</span>
+          </div>
+
+          {/* One hairline row per COA */}
+          <ul>
+            {filtered.map((coa) => (
+              <li
+                key={coa.id}
+                className="grid grid-cols-1 items-center gap-x-4 gap-y-3 border-t border-border px-6 py-5 transition-colors first:border-t-0 hover:bg-surface lg:grid-cols-[minmax(0,1fr)_minmax(0,1.1fr)_8rem_8rem] lg:gap-y-0 lg:first:border-t-0"
               >
-                <Download className="mr-2 h-3.5 w-3.5" aria-hidden="true" />{" "}
-                Download
-              </a>
-            </div>
-          ))}
+                <span className="truncate font-mono text-[12px] uppercase tracking-[0.14em] text-brand-navy">
+                  {coa.productSlug}
+                </span>
+                <span className="font-mono text-sm tabular-nums text-brand-navy">
+                  {coa.batchNumber}
+                </span>
+                <span className="font-mono text-[11px] uppercase tracking-[0.14em] text-muted-foreground">
+                  Tested {formatCOADate(coa.testedDate)}
+                </span>
+                <a
+                  href={coa.downloadUrl ?? "#"}
+                  download
+                  className="inline-flex h-9 items-center justify-center gap-2 whitespace-nowrap rounded-none border border-brand-navy bg-transparent px-4 font-mono text-[11px] uppercase tracking-[0.16em] text-brand-navy transition-colors hover:bg-brand-navy hover:text-white lg:justify-self-end"
+                >
+                  <Download className="size-3.5" aria-hidden="true" />
+                  Download
+                </a>
+              </li>
+            ))}
+          </ul>
         </div>
       ) : (
-        <p className="text-muted-foreground">No COAs found for “{search}”.</p>
+        <p className="mt-8 border border-border bg-surface px-6 py-10 text-center text-muted-foreground">
+          No COAs found for “{search}”.
+        </p>
       )}
     </div>
   );
