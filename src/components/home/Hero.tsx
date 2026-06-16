@@ -70,7 +70,7 @@ export function Hero() {
               </span>
               <div className="relative aspect-[4/3] w-full">
                 <Image
-                  src="/wickpeptides-hero.png"
+                  src="/products/magic.png"
                   alt="Magic Peptides research vial"
                   fill
                   preload
