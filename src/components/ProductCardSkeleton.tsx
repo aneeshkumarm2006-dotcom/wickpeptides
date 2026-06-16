@@ -14,28 +14,34 @@ export function ProductCardSkeleton({ className }: ProductCardSkeletonProps) {
     <div
       aria-hidden
       className={cn(
-        "flex flex-col overflow-hidden rounded-2xl border border-brand-border bg-white",
+        "flex flex-col rounded-none border border-border bg-white",
         className
       )}
     >
-      {/* Image */}
-      <Skeleton className="aspect-square rounded-none rounded-t-2xl" />
+      {/* Spec header */}
+      <div className="flex items-center justify-between gap-2 border-b border-border px-4 py-2.5">
+        <Skeleton className="h-2.5 w-24 rounded-none" />
+      </div>
 
-      <div className="flex flex-1 flex-col gap-2 p-4">
-        {/* Category */}
-        <Skeleton className="h-3 w-20" />
-        {/* Name (two lines) */}
-        <Skeleton className="h-4 w-full" />
-        <Skeleton className="h-4 w-3/4" />
-        {/* Stars */}
-        <Skeleton className="h-3.5 w-28" />
-        {/* Price + points */}
-        <div className="mt-auto flex flex-col gap-1.5 pt-2">
-          <Skeleton className="h-5 w-16" />
-          <Skeleton className="h-3 w-24" />
+      {/* Plate */}
+      <div className="bg-surface-2 p-6">
+        <Skeleton className="aspect-[4/3] w-full rounded-none" />
+      </div>
+
+      {/* Body */}
+      <div className="flex flex-1 flex-col gap-3 p-4">
+        {/* Name */}
+        <Skeleton className="h-4 w-3/4 rounded-none" />
+        {/* Rating */}
+        <Skeleton className="h-3 w-28 rounded-none" />
+        {/* Price + arrow link */}
+        <div className="mt-auto flex items-end justify-between gap-3 border-t border-border pt-3">
+          <div className="flex flex-col gap-1.5">
+            <Skeleton className="h-5 w-16 rounded-none" />
+            <Skeleton className="h-2.5 w-24 rounded-none" />
+          </div>
+          <Skeleton className="h-3 w-24 rounded-none" />
         </div>
-        {/* CTA */}
-        <Skeleton className="mt-2 h-9 w-full rounded-lg" />
       </div>
     </div>
   );

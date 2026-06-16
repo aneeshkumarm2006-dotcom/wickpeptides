@@ -31,47 +31,50 @@ export function ShopSidebar({
   };
 
   return (
-    <aside className="space-y-6 lg:sticky lg:top-24 lg:self-start">
-      <div>
-        <h2 className="text-eyebrow mb-3">Filter by category</h2>
+    <aside className="flex flex-col bg-white lg:sticky lg:top-24 lg:self-start">
+      {/* Mono panel header */}
+      <h2 className="border-b border-border px-5 py-4 font-mono text-[11px] font-medium uppercase tracking-[0.22em] text-brand-blue">
+        Filter by category
+      </h2>
 
-        <div className="space-y-2.5">
-          {CATEGORIES.map((c) => {
-            const checked = draft.includes(c.slug);
-            return (
-              <label
-                key={c.slug}
-                className="flex cursor-pointer items-start gap-2.5 text-sm"
-              >
-                <Checkbox
-                  checked={checked}
-                  onCheckedChange={(value) => toggle(c.slug, Boolean(value))}
-                  className="mt-0.5 border-primary shadow"
-                />
-                <span className="leading-tight text-muted-foreground">
-                  {c.name}
-                </span>
-              </label>
-            );
-          })}
-        </div>
+      {/* Checkbox rows */}
+      <div className="flex flex-col">
+        {CATEGORIES.map((c) => {
+          const checked = draft.includes(c.slug);
+          return (
+            <label
+              key={c.slug}
+              className="flex cursor-pointer items-start gap-3 border-b border-border px-5 py-3 text-sm transition-colors hover:bg-surface"
+            >
+              <Checkbox
+                checked={checked}
+                onCheckedChange={(value) => toggle(c.slug, Boolean(value))}
+                className="mt-0.5 rounded-none border-primary"
+              />
+              <span className="leading-tight text-muted-foreground">
+                {c.name}
+              </span>
+            </label>
+          );
+        })}
       </div>
 
-      <div className="flex gap-2">
+      {/* Sharp action buttons */}
+      <div className="flex gap-px bg-border p-px">
         <button
           type="button"
           onClick={() => {
             setDraft([]);
             onClear();
           }}
-          className="inline-flex h-8 flex-1 items-center justify-center gap-2 whitespace-nowrap rounded-md border border-input bg-background px-3 text-xs font-medium shadow-sm transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
+          className="inline-flex h-11 flex-1 items-center justify-center whitespace-nowrap rounded-none border border-brand-navy bg-white px-3 font-mono text-[11px] font-semibold uppercase tracking-[0.14em] text-brand-navy transition-colors hover:bg-brand-navy hover:text-white focus-visible:outline-none"
         >
           Reset
         </button>
         <button
           type="button"
           onClick={() => onApply(draft)}
-          className="inline-flex h-8 flex-1 items-center justify-center gap-2 whitespace-nowrap rounded-md bg-primary px-3 text-xs font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
+          className="inline-flex h-11 flex-1 items-center justify-center whitespace-nowrap rounded-none bg-brand-navy px-3 font-mono text-[11px] font-semibold uppercase tracking-[0.14em] text-white transition-colors hover:bg-brand-blue focus-visible:outline-none"
         >
           Apply
         </button>
